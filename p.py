@@ -63,8 +63,9 @@ def game_utama():
         print("1. Bersembunyi di balik pohon besar - Tunggu sambil mencuri lewat")
         print("2. Bernegosiasi - Coba berbicara dengan mereka")
         print("3. Mengalihkan perhatian - Lempar batu ke arah lain")
+        print("4. Berlari menuju tempat aman - Cepat-cepat kabur tanpa arah yang pasti")
         
-        aksi = input("\nPilihan aksi Anda (1, 2, atau 3): ")
+        aksi = input("\nPilihan aksi Anda (1, 2, 3, atau 4): ")
         
         if aksi == "1":
             print(f"\n{nama} dengan cepat bersembunyi di balik pohon yang sangat besar...")
@@ -159,6 +160,78 @@ def game_utama():
             else:
                 print("\n❌ Pilihan eksplorasi tidak valid!")
                 print(f"   {nama} tertangkap kanibal. GAME OVER! 💀")
+                
+        elif aksi == "4":
+            print(f"\n{nama} merasa panik dan mulai berlari dengan cepat!")
+            print("🏃 Berlari secepat kaki membawa, tidak peduli arah tujuan!")
+            print("❌ Suara kanibal semakin mendekat...")
+            print("🌳 Menembus semak-semak dan pohon-pohon yang lebat...")
+            print("💨 Jantung berdebar... napas memburu... kaki semakin cepat...")
+            print("😰 Terdengar suara genderang dan jeritan kanibal di belakang!")
+            
+            print(f"\n🔍 Dalam kepanikan, {nama} melihat beberapa tempat tersembunyi:")
+            print("a. Gua kecil di tepi tebing - Gelap dan berbahaya!")
+            print("b. Lubang pohon besar di akar - Sempit tapi aman!")
+            print("c. Kolam air dengan rawa - Basah tapi bisa menyeberangi!")
+            
+            tempat_sembunyi = input("\nMana tempat aman yang akan Anda pilih (a, b, atau c)? ")
+            
+            if tempat_sembunyi == "a":
+                print(f"\n{nama} memasuki gua kecil dengan tergesa-gesa...")
+                print("🌑 Gelap sekali... tidak bisa melihat apa-apa...")
+                print("🦇 Suara kelelawar dan binatang aneh terdengar...")
+                print("😨 Rasanya seperti ada sesuatu di dalam gua ini...")
+                print(f"✔️  Tapi pantas saja... {nama} tetap diam dan tenang!")
+                print("🤐 Menahan napas sambil mendengarkan suara kanibal lewat...")
+                print("✔️  Mereka berlalu tanpa menyadari kehadiran Anda!")
+                print("💎 Setelah beberapa saat, mata mulai terbiasa dengan gelap...")
+                print("✨ Ternyata ada benda berkilau di sudut gua!")
+                print("💰 Harta karun tersembunyi - emas dan permata!")
+                print("\n🎉 Anda selamat dan menemukan harta karun!")
+                print("⛵ Menggunakan peta dalam harta untuk menemukan perahu pelarian!")
+                print(f"\n✅ SELAMAT! {nama} berhasil lolos dengan harta berharga!")
+                print(f"   {nama} menemukan keberuntungan dalam kepanikan! 💰🎊")
+                
+            elif tempat_sembunyi == "b":
+                print(f"\n{nama} melompat masuk ke lubang pohon besar!")
+                print("🌳 Tangan menyentuh akar-akar pohon yang bergerak-gerak...")
+                print("🐛 Berbagai serangga menemani di dalam lubang ini...")
+                print("✔️  Meski sempit dan tidak nyaman, itu tempat yang sangat aman!")
+                print("🤐 Tetap diam mendengarkan suara kanibal di atas...")
+                print("👣 Langkah kaki kanibal lewat di atas kepala Anda...")
+                print("😤 Menahan diri untuk tidak bersin atau batuk...")
+                print("✔️  Akhirnya mereka lewat dan suara berkurang...")
+                print("\n🌅 Setelah waktu lama, Anda keluar dari lubang pohon...")
+                print("🎒 Menemukan makanan alami - buah-buahan dan air segar!")
+                print("🛠️  Menggunakan kayu di sekitar untuk membuat perahu!")
+                print("\n🎉 Perahu sederhana berhasil dibuat dengan aman!")
+                print("⛵ Berlayar meninggalkan pulau dengan senyuman lega!")
+                print(f"\n✅ SELAMAT! {nama} berhasil survive dengan strategi cemat!")
+                print(f"   {nama} keluar dari pulau berbahaya dengan selamat! 🎊")
+                
+            elif tempat_sembunyi == "c":
+                print(f"\n{nama} melari menuju kolam air dengan rawa!")
+                print("💦 Memasuki air yang dingin dan lumpur yang lembek...")
+                print("🌊 Menggunakan rawa sebagai penghalang alami...")
+                print("🦗 Kupu-kupu dan serangga terbang-terbang...")
+                print("✔️  Menyembunyikan diri di antara tebu dan rumput air!")
+                print("🤐 Berdiri diam sambil dikepung rawa yang menyerupai labirin!")
+                print("✔️  Kanibal tidak berani memasuki rawa yang berbahaya!")
+                print("👣 Mereka berlalu tanpa mendekati area rawa ini...")
+                print("\n🌅 Setelah dinyatakan aman, Anda keluar dari rawa...")
+                print("🧂 Basah kuyup tapi tetap bersemangat untuk bertahan!")
+                print("🎣 Di tepi rawa, menemukan kolam ikan yang melimpah!")
+                print("🍖 Mengumpulkan ikan dan makanan lain untuk persediaan...")
+                print("🛠️  Membuat perahu dari bambu dan ranting kuat!")
+                print("\n🎉 Perahu tangguh berhasil selesai dengan bahan alam!")
+                print("⛵ Berlayar penuh percaya diri meninggalkan pulau!")
+                print(f"\n✅ SELAMAT! {nama} berhasil escape dengan kecerdikan!")
+                print(f"   {nama} lolos dari kepanikan dan pulau misterius! 🎊")
+                
+            else:
+                print("\n❌ Pilihan tempat sembunyi tidak valid!")
+                print(f"   {nama} terlalu lama mencari dan ketahuan oleh kanibal!")
+                print(f"   {nama} tidak berhasil melarikan diri. GAME OVER! 💀")
                 
         else:
             print("\n❌ Pilihan aksi tidak valid! Orang kanibal menemukan Anda!")
