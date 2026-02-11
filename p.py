@@ -187,10 +187,48 @@ def game_utama():
                 print("💎 Setelah beberapa saat, mata mulai terbiasa dengan gelap...")
                 print("✨ Ternyata ada benda berkilau di sudut gua!")
                 print("💰 Harta karun tersembunyi - emas dan permata!")
-                print("\n🎉 Anda selamat dan menemukan harta karun!")
-                print("⛵ Menggunakan peta dalam harta untuk menemukan perahu pelarian!")
-                print(f"\n✅ SELAMAT! {nama} berhasil lolos dengan harta berharga!")
-                print(f"   {nama} menemukan keberuntungan dalam kepanikan! 💰🎊")
+                
+                print("\n" + "=" * 50)
+                print("⭐ KEPUTUSAN PENTING ⭐")
+                print("=" * 50)
+                print(f"\n{nama} sudah aman di gua ini. Sekarang harus mengambil keputusan:")
+                print("1. Tetap di tempat persembunyian Coding - Gunakan sumber daya gua untuk bertahan")
+                print("2. Melarikan diri Bug - Ambil harta karun dan langsung cari perahu!")
+                
+                keputusan_aman = input("\nKeputusan Anda (1 atau 2): ")
+                
+                if keputusan_aman == "1":
+                    print(f"\n{nama} memutuskan untuk tetap tinggal di gua dengan strategi coding...")
+                    print("💻 Mulai memetakan sumber daya yang ada dalam gua...")
+                    print("🔬 Menggunakan logika dan algoritma untuk bertahan lama...")
+                    print("📝 Menulis catatan dan rencana escape dengan detail...")
+                    print("🛠️  Memperkuat struktur gua dengan kayu dan batu...")
+                    print("💧 Mencari air yang aman untuk diminum...")
+                    print("🍖 Mempelajari pola kanibal dari jarak aman...")
+                    print("\n✔️  Setelah berhari-hari bersabar dan merencanakan...")
+                    print("📚 Rencana sempurna untuk escape akhirnya terbentuk!")
+                    print("🎯 Menemukan celah waktu saat kanibal tidur...")
+                    print("⛵ Menggunakan perahu tersembunyi yang ada dalam peta harta karun!")
+                    print("\n✅ SELAMAT! Escape terkoordinasi dengan sempurna!")
+                    print(f"   {nama} melarikan diri dengan harta karun! 💰🎊")
+                    
+                elif keputusan_aman == "2":
+                    print(f"\n{nama} mengambil keputusan berani untuk segera melarikan diri...")
+                    print("⚡ Mengambil harta karun dan semua yang bisa dibawa...")
+                    print("🏃 Berlari keluar gua tanpa membuang waktu...")
+                    print("🗺️  Mengikuti peta harta karun menuju lokasi perahu...")
+                    print("😰 Mendengar suara kanibal mulai bangun...")
+                    print("💨 Berlari semakin cepat meninggalkan area hutan...")
+                    print("🌊 Mencapai pantai dan menemukan perahu tersembunyi!")
+                    print("⛵ Cepat-cepat berlayar keluar sebelum kanibal tiba!")
+                    print("\n🎉 Berhasil escape dengan harta dan kecepatan!")
+                    print("😅 Napas lega - kanibal tertinggal jauh di belakang!")
+                    print("\n✅ SELAMAT! Escape dengan harta dan nyawa selamat!")
+                    print(f"   {nama} melarikan diri dengan cepat dan harta berharga! 💰🎊")
+                    
+                else:
+                    print("\n❌ Keputusan tidak valid! Kanibal mendengar gerakan Anda!")
+                    print(f"   {nama} gagal escape dari gua. GAME OVER! 💀")
                 
             elif tempat_sembunyi == "b":
                 print(f"\n{nama} melompat masuk ke lubang pohon besar!")
