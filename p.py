@@ -194,8 +194,9 @@ def game_utama():
                 print(f"\n{nama} sudah aman di gua ini. Sekarang harus mengambil keputusan:")
                 print("1. Tetap di tempat persembunyian Coding - Gunakan sumber daya gua untuk bertahan")
                 print("2. Melarikan diri Bug - Ambil harta karun dan langsung cari perahu!")
+                print("3. Ragu-ragu tanpa keputusan - Menunggu tanpa rencana")
                 
-                keputusan_aman = input("\nKeputusan Anda (1 atau 2): ")
+                keputusan_aman = input("\nKeputusan Anda (1, 2, atau 3): ")
                 
                 if keputusan_aman == "1":
                     print(f"\n{nama} memutuskan untuk tetap tinggal di gua dengan strategi coding...")
@@ -226,6 +227,19 @@ def game_utama():
                     print("\n✅ SELAMAT! Escape dengan harta dan nyawa selamat!")
                     print(f"   {nama} melarikan diri dengan cepat dan harta berharga! 💰🎊")
                     
+                elif keputusan_aman == "3":
+                    print(f"\n{nama} tidak bisa memutuskan apa-apa dan hanya diam saja di gua...")
+                    print("⏳ Waktu terus berjalan... kanibal masih berkeliaran...")
+                    print("😅 Makanan dalam gua mulai terbatas...")
+                    print("💧 Air mulai habis karena tidak ada yang mengelola sumber daya...")
+                    print("📉 Kekuatan fisik semakin melemah hari demi hari...")
+                    print("😞 Rasa putus asa menyelimuti karena tidak ada rencana escape...")
+                    print("🌑 Gelap hati dan gelap gua terasa lebih mencekam...")
+                    print("😴 Akhirnya tertidur dalam keadaan yang sangat lemah...")
+                    print("💤 Tidak bangun lagi karena kekurangan nutrisi dan dehidrasi...")
+                    print("\n❌ GAME OVER! Kehabisan sumber daya!")
+                    print(f"   {nama} meninggal karena tidak ada keputusan tepat. SELAMAT TINGGAL! 💀")
+                    
                 else:
                     print("\n❌ Keputusan tidak valid! Kanibal mendengar gerakan Anda!")
                     print(f"   {nama} gagal escape dari gua. GAME OVER! 💀")
@@ -241,11 +255,63 @@ def game_utama():
                 print("✔️  Akhirnya mereka lewat dan suara berkurang...")
                 print("\n🌅 Setelah waktu lama, Anda keluar dari lubang pohon...")
                 print("🎒 Menemukan makanan alami - buah-buahan dan air segar!")
-                print("🛠️  Menggunakan kayu di sekitar untuk membuat perahu!")
-                print("\n🎉 Perahu sederhana berhasil dibuat dengan aman!")
-                print("⛵ Berlayar meninggalkan pulau dengan senyuman lega!")
-                print(f"\n✅ SELAMAT! {nama} berhasil survive dengan strategi cemat!")
-                print(f"   {nama} keluar dari pulau berbahaya dengan selamat! 🎊")
+                
+                print("\n" + "=" * 50)
+                print("⭐ KEPUTUSAN PENTING ⭐")
+                print("=" * 50)
+                print(f"\n{nama} sudah aman keluar dari lubang pohon. Sekarang harus mengambil keputusan:")
+                print("1. Tetap di tempat persembunyian Coding - Bangun shelter dan tunggu situasi aman")
+                print("2. Melarikan diri Bug - Langsung cari perahu dan tinggalkan pulau!")
+                print("3. Ragu-ragu tanpa keputusan - Menunggu tanpa rencana")
+                
+                keputusan_aman2 = input("\nKeputusan Anda (1, 2, atau 3): ")
+                
+                if keputusan_aman2 == "1":
+                    print(f"\n{nama} memutuskan untuk membangun shelter permanen di area pohon...")
+                    print("🏠 Memanfaatkan lubang pohon sebagai tempat tinggal sementara...")
+                    print("🛠️  Membuat struktur kayu yang kokoh dengan teknik coding nature...")
+                    print("💧 Mengumpulkan air dari morning dew dan membuat reservoir...")
+                    print("🍖 Mengatur sistem berburu ikan dan memasak dengan hati-hati...")
+                    print("📊 Membuat jadwal harian untuk monitor pergerakan kanibal...")
+                    print("🔍 Mengamati pola kelakuan kanibal selama berminggu-minggu...")
+                    print("\n✔️  Akhirnya menemukan celah gap saat mereka holiday...")
+                    print("🛠️  Membuat perahu dari kayu pohon dengan sempurna!")
+                    print("⛵ Berlayar keluar dengan persiapan yang matang!")
+                    print("\n✅ SELAMAT! Persiapan detail membuat escape sempurna!")
+                    print(f"   {nama} escape dengan strategi terencana! 🎊")
+                    
+                elif keputusan_aman2 == "2":
+                    print(f"\n{nama} tidak mau menunggu lagi dan langsung mencari perahu...")
+                    print("🏃 Berlari ringan menuju pantai sambil menghindari jalur kanibal...")
+                    print("🗺️  Mengikuti tanda-tanda alam yang menunjukkan arah laut...")
+                    print("😰 Sesekali terdengar suara jauh dari kanibal...")
+                    print("⚡ Berlari semakin cepat dengan semangat escape...")
+                    print("🌊 Akhirnya sampai di pantai yang sepi dan aman!")
+                    print("⛵ Menemukan perahu kecil tersembunyi di balik batu...")
+                    print("💨 Cepat-cepat berlayar sebelum kanibal tahu!")
+                    print("\n🎉 Berhasil meninggalkan pulau dengan cepat!")
+                    print("😅 Kanibal tidak sempat mengejar sampai ke pantai!")
+                    print("\n✅ SELAMAT! Escape cepat menyelamatkan nyawa!")
+                    print(f"   {nama} lolos dengan kecepatan dan keberanian! 🎊")
+                    
+                elif keputusan_aman2 == "3":
+                    print(f"\n{nama} tidak tahu harus berbuat apa dan hanya berdiam diri di area pohon...")
+                    print("⏳ Hari demi hari berlalu tanpa rencana konkret...")
+                    print("🍲 Makanan yang dikumpulkan awalnya mulai habis...")
+                    print("💧 Cadangan air semakin menipis karena keliru mengaturnya...")
+                    print("😩 Tubuh semakin lemas karena malnutrisi dan kelelahan...")
+                    print("👀 Kanibal masih sering lewat di sekitar area pohon...")
+                    print("😟 Rasa khawatir dan stress membuat sulit tidur...")
+                    print("🌙 Seminggu berlalu... dua minggu berlalu... ketiga minggu...")
+                    print("💔 Harapan mulai sirna tanpa ada progress escape...")
+                    print("😪 Akhirnya pingsan karena kelaparan dan dehidrasi berat...")
+                    print("💤 Tidak bangun lagi di bawah pohon yang sama...")
+                    print("\n❌ GAME OVER! Kehabisan sumber daya!")
+                    print(f"   {nama} meninggal dalam keadaan lemah di bawah pohon. SELAMAT TINGGAL! 💀")
+                    
+                else:
+                    print("\n❌ Keputusan tidak valid! Suara Anda menarik perhatian...")
+                    print(f"   {nama} tertangkap oleh kanibal. GAME OVER! 💀")
                 
             elif tempat_sembunyi == "c":
                 print(f"\n{nama} melari menuju kolam air dengan rawa!")
@@ -259,12 +325,62 @@ def game_utama():
                 print("\n🌅 Setelah dinyatakan aman, Anda keluar dari rawa...")
                 print("🧂 Basah kuyup tapi tetap bersemangat untuk bertahan!")
                 print("🎣 Di tepi rawa, menemukan kolam ikan yang melimpah!")
-                print("🍖 Mengumpulkan ikan dan makanan lain untuk persediaan...")
-                print("🛠️  Membuat perahu dari bambu dan ranting kuat!")
-                print("\n🎉 Perahu tangguh berhasil selesai dengan bahan alam!")
-                print("⛵ Berlayar penuh percaya diri meninggalkan pulau!")
-                print(f"\n✅ SELAMAT! {nama} berhasil escape dengan kecerdikan!")
-                print(f"   {nama} lolos dari kepanikan dan pulau misterius! 🎊")
+                
+                print("\n" + "=" * 50)
+                print("⭐ KEPUTUSAN PENTING ⭐")
+                print("=" * 50)
+                print(f"\n{nama} sudah aman keluar dari rawa. Sekarang harus mengambil keputusan:")
+                print("1. Tetap di tempat persembunyian Coding - Maksimalkan sumber daya rawa")
+                print("2. Melarikan diri Bug - Segera cari dan gunakan perahu!")
+                print("3. Ragu-ragu tanpa keputusan - Menunggu tanpa rencana")
+                
+                keputusan_aman3 = input("\nKeputusan Anda (1, 2, atau 3): ")
+                
+                if keputusan_aman3 == "1":
+                    print(f"\n{nama} memutuskan untuk menjadikan rawa sebagai basis bertahan...")
+                    print("🏗️  Memanfaatkan rawa sebagai fortress alami yang aman...")
+                    print("📋 Mengorganisir sumber daya - ikan melimpah, air tawar tersedia...")
+                    print("🔬 Mengamati pola kanibal dari balik tebu yang lebat...")
+                    print("💪 Membangun kekuatan dengan makanan bergizi dari ikan rawa...")
+                    print("🎯 Merencanakan escape detail dengan persiapan matang...")
+                    print("🛠️  Mengumpulkan material untuk membuat perahu kuat dari bambu...")
+                    print("\n✔️  Setelah maksimal persiapan selesai...")
+                    print("⛵ Perahu bambu yang tangguh siap berlayar!")
+                    print("🎊 Meninggalkan pulau dengan percaya diri penuh!")
+                    print("\n✅ SELAMAT! Strategi bertahan di rawa sangat berhasil!")
+                    print(f"   {nama} escape dengan sumber daya rawa yang berlimpah! 💪🎊")
+                    
+                elif keputusan_aman3 == "2":
+                    print(f"\n{nama} langsung bergerak cari dan ambil perahu untuk escape...")
+                    print("⚡ Keluar dari rawa dan mulai research lokasi perahu...")
+                    print("🗺️  Mengikuti tanda-tanda dan petunjuk alam menuju perahu...")
+                    print("🏃 Berlari dengan hati-hati menghindari jalur kanibal...")
+                    print("😨 Beberapa kali hampir ketahuan tapi terhindar dengan cepat...")
+                    print("🌊 Akhirnya mencapai pantai dan menemukan perahu!")
+                    print("⛵ Cepat-cepat naik dan berlayar menggunakan tenaga maksimal!")
+                    print("💨 Air bercipratan saat menjauh dari pantai...")
+                    print("\n🎉 Berhasil escape dari rawa dan pulau misterius!")
+                    print("😅 Kanibal berteriak di pantai tapi sudah terlalu jauh!")
+                    print("\n✅ SELAMAT! Keputusan cepat menyelamatkan nyawa!")
+                    print(f"   {nama} lolos dari pulau dengan aksi cepat! ⛵🎊")
+                    
+                elif keputusan_aman3 == "3":
+                    print(f"\n{nama} tidak tahu apa yang harus dilakukan dan hanya berdiam diri di tepi rawa...")
+                    print("⏳ Hari-hari berlalu dengan rasa khawatir dan ketidakpastian...")
+                    print("🐟 Ikan di rawa ada tapi tidak ada yang mengatur untuk ditangkap...")
+                    print("💧 Air tersedia tapi tanpa perencanaan bergizi yang baik...")
+                    print("🦟 Nyamuk dan serangga rawa menyerang terus-menerus...")
+                    print("😩 Tubuh makin lemah dan sakit dari gigitan dan infeksi...")
+                    print("🤒 Demam tinggi menyerang karena penyakit dari lingkungan rawa...")
+                    print("😴 Kesadaran mulai berkurang karena sakit yang parah...")
+                    print("🌊 Air di sekitar menjadi tempat berkembang bakteri berbahaya...")
+                    print("😪 Akhirnya kehilangan kesadaran dan tidak terbangun lagi...")
+                    print("\n❌ GAME OVER! Kehabisan sumber daya dan sakit menimpa!")
+                    print(f"   {nama} meninggal karena penyakit dan kelemahan di rawa. SELAMAT TINGGAL! 💀")
+                    
+                else:
+                    print("\n❌ Keputusan tidak valid! Kanibal menemukan jejakmu di rawa!")
+                    print(f"   {nama} tertangkap di rawa. GAME OVER! 💀")
                 
             else:
                 print("\n❌ Pilihan tempat sembunyi tidak valid!")
